@@ -1,3 +1,4 @@
+/* IMPORT SECTIONS */
 @import "variables";
 @import "mixins";
 @import "normalize";
@@ -5,9 +6,10 @@
 
 /* Components */
 @import "components/form_field";
+@import "components/icon";
 
 /* Sections */
-@import "section/registration_form";
-
+@import "sections/registration_form";
+//
 /* Pages / Views */
 @import "pages/registration";

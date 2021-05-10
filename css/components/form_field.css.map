@@ -1,9 +1,0 @@
-{
-	"version": 3,
-	"file": "form_field.css",
-	"sources": [
-		"../../sass/components/form_field.scss"
-	],
-	"names": [],
-	"mappings": ""
-}

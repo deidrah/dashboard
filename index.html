@@ -3,22 +3,37 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,600&family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="vendor/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="css/style.css">
   <title>Dashboard</title>
 </head>
 <body>
   <header>
-    <div class="menu">
+    <div class="info">
       <ul>
-        <li><i class="menu-icon--wallet"></i>$1,500.00</li>
-        <li><i class="menu-icon--bell"></i></li>
-        <li><i clas="menu-icon--user"></i>Leonardo Dicaprio</li>
-        <li><i class="menu-icon--logout"></i></li>
+        <li><i class="icon info-icon--wallet"></i>$1,500.00</li>
+        <li><i class="icon info-icon--bell"></i></li>
+        <li><i class="icon info-icon--user"></i>Leonardo Dicaprio</li>
+        <li><i class="icon info-icon--logout"></i></li>
       </ul>
     </div>
   </header>
   <aside class="sidebar">
-
+    <div class="logo" onclick="closeNav()"><i class="icon logo-icon--hamburger"></i></div>
+    <ul>
+      <li><i class="icon logo-icon--star"></i>General</li>
+      <li><i class="icon logo-icon--detail"></i>Details</li>
+      <li><i class="icon logo-icon--link"></i>Links</li>
+      <li><i class="icon logo-icon--banners"></i>Banners</li>
+      <li><i class="icon logo-icon--personal"></i>Personal data</li>
+      <li><i class="icon logo-icon--payout"></i>Payout</li>
+      <li><i class="icon logo-icon--back"></i>Postback</li>
+    </ul>
+    <div class="manager">
+      <img src="#" />
+      <p>Mikhael E.</p>
+    </div>
   </aside>
   <div class="container">
     <section class="generalStatistic">

@@ -1,3 +1,4 @@
+/* IMPORT SECTIONS */
 /* Colors */
 /* Font sizes */
 /* Fonts */
@@ -340,7 +341,73 @@ template {
   display: none;
 }
 
+/* GENERAL */
+/* SIDEBAR */
+.sidebar {
+  background-color: #191919;
+  color: #fff;
+}
+
+/* HEADER */
+/* MAIN */
 /* Components */
+.icon {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.sidebar .icon {
+  color: #fff;
+}
+
+.info-icon--wallet {
+  background-image: url("../images/icons/wallet.svg");
+}
+
+.info-icon--bell {
+  background-image: url("../images/icons/notification.svg");
+}
+
+.info-icon--user {
+  background-image: url("../images/icons/profile.svg");
+}
+
+.info-icon--logout {
+  background-image: url("../images/icons/quit.svg");
+}
+
+.logo-icon--star {
+  background-image: url("../images/icons/general.svg");
+}
+
+.logo-icon--detail {
+  background-image: url("../images/icons/details.svg");
+}
+
+.logo-icon--link {
+  background-image: url("../images/icons/links.svg");
+}
+
+.logo-icon--banners {
+  background-image: url("../images/icons/banners.svg");
+}
+
+.logo-icon--personal {
+  background-image: url("../images/icons/personaldata.svg");
+}
+
+.logo-icon--payout {
+  background-image: url("../images/icons/payout.svg");
+}
+
+.logo-icon--back {
+  background-image: url("../images/icons/postback.svg");
+}
+
 /* Sections */
 /* Pages / Views */
+
 /*# sourceMappingURL=style.css.map */
