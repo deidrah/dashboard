@@ -3,7 +3,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,600&family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
   <link rel="stylesheet" href="vendor/bootstrap-grid.min.css">
   <link rel="stylesheet" href="css/style.css">
   <title>Dashboard</title>
@@ -12,108 +15,121 @@
   <header>
     <div class="info">
       <ul>
-        <li><i class="icon info-icon--wallet"></i>$1,500.00</li>
-        <li><i class="icon info-icon--bell"></i></li>
-        <li><i class="icon info-icon--user"></i>Leonardo Dicaprio</li>
-        <li><i class="icon info-icon--logout"></i></li>
+        <li><i class="icon fas fa-wallet"></i>
+          <select>
+            <optgroup label="Wallets">
+              <option value="1500">$1,500.00&#8195</option>
+              <option value="2000">$2,000.00&#8195</option>
+              <option value="2500">$2,500.00&#8195</option>
+            </optgroup>
+          </select>
+        </li>
+        <li><i class="icon fas fa-bell"></i></li>
+        <li><i class="icon fas fa-user"></i><span class="userId">Leonardo Dicaprio</span></li>
+        <li><i class="icon fas fa-sign-out-alt"></i></li>
       </ul>
     </div>
   </header>
-  <aside class="sidebar">
-    <div class="logo" onclick="closeNav()"><i class="icon logo-icon--hamburger"></i></div>
-    <ul>
-      <li><i class="icon logo-icon--star"></i>General</li>
-      <li><i class="icon logo-icon--detail"></i>Details</li>
-      <li><i class="icon logo-icon--link"></i>Links</li>
-      <li><i class="icon logo-icon--banners"></i>Banners</li>
-      <li><i class="icon logo-icon--personal"></i>Personal data</li>
-      <li><i class="icon logo-icon--payout"></i>Payout</li>
-      <li><i class="icon logo-icon--back"></i>Postback</li>
-    </ul>
-    <div class="manager">
-      <img src="#" />
-      <p>Mikhael E.</p>
+  <div class="mainContainer">
+    <aside class="sidebar">
+      <div class="logo">Just do it<i class="icon fas fa-bars"></i></div>
+      <ul>
+        <li><i class="icon fas fa-star"></i>General</li>
+        <li><i class="icon fas fa-sitemap"></i>Details</li>
+        <li><i class="icon fas fa-link"></i>Links</li>
+        <li><i class="icon fas fa-images"></i>Banners</li>
+        <li><i class="icon fas fa-user"></i>Personal data</li>
+        <li><i class="icon fas fa-money-bill-wave"></i>Payout</li>
+        <li><i class="icon fas fa-undo-alt"></i>Postback</li>
+      </ul>
+      <div class="contact">
+        <p>Your manager</p>
+        <div class="manager">
+          <img src="images/manager.png" />
+          <p>Mikhael E.</p>
+        </div>
+      </div>
+    </aside>
+    <div class="pagesContainer">
+      <div class="generalStatistic">
+        <h2>General Statistic</h2>
+        <div class="calendar"></div>
+        <div class="statistics">
+          <ul>
+            <li>Visit Signups <span>124</span></li>
+            <li>FTD <span>445</span></li>
+            <li>Net deposit <span>564</span></li>
+            <li>Turn over <span>432</span></li>
+          </ul>
+        </div>
+        <div class="earnings">
+          <h3>Earnings chart</h3>
+          <button>Signups</button>
+          <button>FTD</button>
+          <button>Earned</button>
+          <div class="chart"></div>
+        </div>
+      </div>
+      <div class="links">
+        <h2>Links</h2>
+        <button>+ add new</button>
+        <table>
+          <tbody>
+            <tr>
+              <td>Cell</td>
+              <td>Cell</td>
+              <td>Cell</td>
+            </tr>
+            <tr>
+              <td>Cell</td>
+              <td>Cell</td>
+              <td>Cell</td>
+            </tr>
+            <tr>
+              <td>Cell</td>
+              <td>Cell</td>
+              <td>Cell</td>
+            </tr>
+            <tr>
+              <td>Cell</td>
+              <td>Cell</td>
+              <td>Cell</td>
+            </tr>
+            <tr>
+              <td>Cell</td>
+              <td>Cell</td>
+              <td>Cell</td>
+            </tr>
+            <tr>
+              <td>Cell</td>
+              <td>Cell</td>
+              <td>Cell</td>
+            </tr>
+            <tr>
+              <td>Cell</td>
+              <td>Cell</td>
+              <td>Cell</td>
+            </tr>
+            <tr>
+              <td>Cell</td>
+              <td>Cell</td>
+              <td>Cell</td>
+            </tr>
+            <tr>
+              <td>Cell</td>
+              <td>Cell</td>
+              <td>Cell</td>
+            </tr>
+            <tr>
+              <td>Cell</td>
+              <td>Cell</td>
+              <td>Cell</td>
+            </tr>
+          </tbody>
+        </table>
+        <button>+ add new</button>
+      </div>
     </div>
-  </aside>
-  <div class="container">
-    <section class="generalStatistic">
-      <h2>General Statistic</h2>
-      <div class="calendar"></div>
-      <div class="statistics">
-        <ul>
-          <li>Visit Signups <span>124</span></li>
-          <li>FTD <span>445</span></li>
-          <li>Net deposit <span>564</span></li>
-          <li>Turn over <span>432</span></li>
-        </ul>
-      </div>
-      <div class="earnings">
-        <h3>Earnings chart</h3>
-        <button>Signups</button>
-        <button>FTD</button>
-        <button>Earned</button>
-        <div class="chart"></div>
-      </div>
-    </section>
-    <section class="links">
-      <h2>Links</h2>
-      <button>+ add new</button>
-      <table>
-        <tbody>
-          <tr>
-            <td>Cell</td>
-            <td>Cell</td>
-            <td>Cell</td>
-          </tr>
-          <tr>
-            <td>Cell</td>
-            <td>Cell</td>
-            <td>Cell</td>
-          </tr>
-          <tr>
-            <td>Cell</td>
-            <td>Cell</td>
-            <td>Cell</td>
-          </tr>
-          <tr>
-            <td>Cell</td>
-            <td>Cell</td>
-            <td>Cell</td>
-          </tr>
-          <tr>
-            <td>Cell</td>
-            <td>Cell</td>
-            <td>Cell</td>
-          </tr>
-          <tr>
-            <td>Cell</td>
-            <td>Cell</td>
-            <td>Cell</td>
-          </tr>
-          <tr>
-            <td>Cell</td>
-            <td>Cell</td>
-            <td>Cell</td>
-          </tr>
-          <tr>
-            <td>Cell</td>
-            <td>Cell</td>
-            <td>Cell</td>
-          </tr>
-          <tr>
-            <td>Cell</td>
-            <td>Cell</td>
-            <td>Cell</td>
-          </tr>
-          <tr>
-            <td>Cell</td>
-            <td>Cell</td>
-            <td>Cell</td>
-          </tr>
-        </tbody>
-      </table>
-      <button>+ add new</button>
-    </section>
   </div>
 </body>
 </html>

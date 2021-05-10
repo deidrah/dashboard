@@ -342,14 +342,131 @@ template {
 }
 
 /* GENERAL */
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
+
 /* SIDEBAR */
 .sidebar {
   background-color: #191919;
-  color: #fff;
+  color: #9C9C9C;
+  letter-spacing: 1px;
+  height: 100%;
+  width: 20vw;
+  position: absolute;
+  top: 0;
+}
+
+.sidebar .logo {
+  font-family: 'Satisfy', cursive;
+  font-size: 26px;
+  padding: 10px 15px;
+}
+
+.sidebar .logo i {
+  float: right;
+}
+
+.sidebar ul {
+  list-style: none;
+  margin: 20px 0;
+  padding: 0;
+}
+
+.sidebar ul li {
+  padding: 10px 20px;
+}
+
+.sidebar ul li i {
+  margin-right: 20px;
+}
+
+.sidebar .contact {
+  border-top: 1px solid #9C9C9C;
+}
+
+.sidebar .contact > p {
+  margin-left: 10px;
+  font-weight: 400;
+}
+
+.sidebar .manager {
+  display: flex;
+}
+
+.sidebar .manager img {
+  width: 50px;
+  height: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 /* HEADER */
+header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  margin-right: 20px;
+  margin: 0;
+  color: #9C9C9C;
+  font-size: 18px;
+}
+
+header ul select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url("../images/down-chevron.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  border: none;
+  color: #9C9C9C;
+}
+
+header ul li:nth-child(1) i, header ul li:nth-child(3) i {
+  margin-right: 10px;
+}
+
+header ul .userId {
+  font-size: 13px;
+  color: #56819F;
+}
+
+header ul li {
+  padding: 10px 15px;
+  border-left: 1px solid #F3F3F1;
+  border-right: 1px solid #F3F3F1;
+}
+
+header ul li + li {
+  margin-left: 25px;
+}
+
 /* MAIN */
+.mainContainer {
+  width: 100%;
+  height: 100%;
+  background-color: #F3F3F1;
+  overflow: hidden;
+}
+
+.pagesContainer {
+  position: relative;
+  left: 20vw;
+  width: 80%;
+  margin-top: 20px;
+  overflow: hidden;
+}
+
 /* Components */
 .icon {
   width: 20px;
@@ -363,51 +480,10 @@ template {
   color: #fff;
 }
 
-.info-icon--wallet {
-  background-image: url("../images/icons/wallet.svg");
-}
-
-.info-icon--bell {
-  background-image: url("../images/icons/notification.svg");
-}
-
-.info-icon--user {
-  background-image: url("../images/icons/profile.svg");
-}
-
-.info-icon--logout {
-  background-image: url("../images/icons/quit.svg");
-}
-
-.logo-icon--star {
-  background-image: url("../images/icons/general.svg");
-}
-
-.logo-icon--detail {
-  background-image: url("../images/icons/details.svg");
-}
-
-.logo-icon--link {
-  background-image: url("../images/icons/links.svg");
-}
-
-.logo-icon--banners {
-  background-image: url("../images/icons/banners.svg");
-}
-
-.logo-icon--personal {
-  background-image: url("../images/icons/personaldata.svg");
-}
-
-.logo-icon--payout {
-  background-image: url("../images/icons/payout.svg");
-}
-
-.logo-icon--back {
-  background-image: url("../images/icons/postback.svg");
-}
-
 /* Sections */
 /* Pages / Views */
+.generalStatistic {
+  background-color: #fff;
+}
 
 /*# sourceMappingURL=style.css.map */
