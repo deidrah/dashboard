@@ -8,3 +8,42 @@
   width: 100%;
   max-width: 100%;
 }
+
+.links {
+  .table-wrapper {
+    text-align: center;
+    margin: 20px auto;
+  }
+  button {
+    display: inline-block;
+    background-color: $orange;
+    color: $white;
+    margin: 25px;
+    padding: 10px 35px;
+    border: 0;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.25s;
+    &:hover, &:focus {
+      transform: translateY(-0.25em);
+    }
+  }
+  table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    tr {
+      border-top: 2px solid $gray;
+      border-bottom: 2px solid $gray;
+    }
+    td {
+      padding: 20px 0;
+    }
+    a {
+      color: $blue;
+    }
+  }
+}

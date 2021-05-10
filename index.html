@@ -13,130 +13,136 @@
   <title>Dashboard</title>
 </head>
 <body>
-  <header>
-    <div class="info">
-      <ul>
-        <li><i class="icon fas fa-wallet"></i>
-          <select>
-            <optgroup label="Wallets">
-              <option value="1500">$1,500.00&#8195</option>
-              <option value="2000">$2,000.00&#8195</option>
-              <option value="2500">$2,500.00&#8195</option>
-            </optgroup>
-          </select>
-        </li>
-        <li><i class="icon fas fa-bell"></i></li>
-        <li><i class="icon fas fa-user"></i><span class="userId">Leonardo Dicaprio</span></li>
-        <li><i class="icon fas fa-sign-out-alt"></i></li>
-      </ul>
-    </div>
-  </header>
-  <div class="mainContainer">
-    <aside class="sidebar">
-      <div class="logo">Just do it<i class="icon fas fa-bars"></i></div>
-      <ul>
-        <li><i class="icon fas fa-star"></i>General</li>
-        <li><i class="icon fas fa-sitemap"></i>Details</li>
-        <li><i class="icon fas fa-link"></i>Links</li>
-        <li><i class="icon fas fa-images"></i>Banners</li>
-        <li><i class="icon fas fa-user"></i>Personal data</li>
-        <li><i class="icon fas fa-money-bill-wave"></i>Payout</li>
-        <li><i class="icon fas fa-undo-alt"></i>Postback</li>
-      </ul>
-      <div class="contact">
-        <p>Your manager</p>
-        <div class="manager">
-          <img src="images/manager.png" />
-          <p>Mikhael E.</p>
-        </div>
+  <div class="layout">
+    <header>
+      <div class="info">
+        <ul>
+          <li><i class="icon fas fa-wallet"></i>
+            <select>
+              <optgroup label="Wallets">
+                <option value="1500">$1,500.00&#8195</option>
+                <option value="2000">$2,000.00&#8195</option>
+                <option value="2500">$2,500.00&#8195</option>
+              </optgroup>
+            </select>
+          </li>
+          <li><i class="icon fas fa-bell"></i></li>
+          <li><i class="icon fas fa-user"></i><span class="userId">Leonardo Dicaprio</span></li>
+          <li><i class="icon fas fa-sign-out-alt"></i></li>
+        </ul>
       </div>
-    </aside>
-    <div class="pagesContainer">
-      <div class="page generalStatistic">
-        <h2>General Statistic</h2>
-        <div class="calendar">
-          <input type="text" id="datepickerOne">
-          <input type="text" id="datepickerTwo">
-          <button class="button--reset"><i class="icon fas fa-redo-alt"></i></button>
-        </div>
-        <div class="statistics">
-          <ul>
-            <li>Visit Signups <span>124</span></li>
-            <li>FTD <span>445</span></li>
-            <li>Net deposit <span>564</span></li>
-            <li>Turn over <span>432</span></li>
-          </ul>
-        </div>
-        <div class="earnings">
-          <h3>Earnings chart</h3>
-          <button>Signups</button>
-          <button>FTD</button>
-          <button>Earned</button>
-          <div class="chart">
-            <img src="images/graph.png" />
+    </header>
+    <div class="content">
+      <aside class="sidebar">
+        <div class="logo">Just do it<i class="icon fas fa-bars"></i></div>
+        <ul>
+          <li><i class="icon fas fa-star"></i>General</li>
+          <li><i class="icon fas fa-sitemap"></i>Details</li>
+          <li><i class="icon fas fa-link"></i>Links</li>
+          <li><i class="icon fas fa-images"></i>Banners</li>
+          <li><i class="icon fas fa-user"></i>Personal data</li>
+          <li><i class="icon fas fa-money-bill-wave"></i>Payout</li>
+          <li><i class="icon fas fa-undo-alt"></i>Postback</li>
+        </ul>
+        <div class="contact">
+          <p>Your manager</p>
+          <div class="manager">
+            <img src="images/manager.png" />
+            <p>Mikhael E.</p>
           </div>
         </div>
-      </div>
-      <div class="page links">
-        <h2>Links</h2>
-        <button>+ add new</button>
-        <div class="scroll-wrapper">
-          <table>
-            <tbody>
-              <tr>
-                <td>Cell</td>
-                <td>Cell</td>
-                <td>Cell</td>
-              </tr>
-              <tr>
-                <td>Cell</td>
-                <td>Cell</td>
-                <td>Cell</td>
-              </tr>
-              <tr>
-                <td>Cell</td>
-                <td>Cell</td>
-                <td>Cell</td>
-              </tr>
-              <tr>
-                <td>Cell</td>
-                <td>Cell</td>
-                <td>Cell</td>
-              </tr>
-              <tr>
-                <td>Cell</td>
-                <td>Cell</td>
-                <td>Cell</td>
-              </tr>
-              <tr>
-                <td>Cell</td>
-                <td>Cell</td>
-                <td>Cell</td>
-              </tr>
-              <tr>
-                <td>Cell</td>
-                <td>Cell</td>
-                <td>Cell</td>
-              </tr>
-              <tr>
-                <td>Cell</td>
-                <td>Cell</td>
-                <td>Cell</td>
-              </tr>
-              <tr>
-                <td>Cell</td>
-                <td>Cell</td>
-                <td>Cell</td>
-              </tr>
-              <tr>
-                <td>Cell</td>
-                <td>Cell</td>
-                <td>Cell</td>
-              </tr>
-            </tbody>
-          </table>
+      </aside>
+      <div class="mainContainer">
+        <div class="pagesContainer">
+          <div class="page generalStatistic">
+            <h2>General Statistic</h2>
+            <div class="calendar">
+              <input type="text" id="datepickerOne">
+              <input type="text" id="datepickerTwo">
+              <button class="button--reset"><i class="icon fas fa-redo-alt"></i></button>
+            </div>
+            <div class="statistics">
+              <ul>
+                <li>Visit Signups <span>124</span></li>
+                <li>FTD <span>445</span></li>
+                <li>Net deposit <span>564</span></li>
+                <li>Turn over <span>432</span></li>
+              </ul>
+            </div>
+            <div class="earnings">
+              <h3>Earnings chart</h3>
+              <button>Signups</button>
+              <button>FTD</button>
+              <button>Earned</button>
+              <div class="chart">
+                <img src="images/graph.png" />
+              </div>
+            </div>
           </div>
-        <button>+ add new</button>
+          <div class="page links">
+            <h2>Links</h2>
+            <div class="table-wrapper">
+              <button>+ add new</button>
+              <div class="scroll-wrapper">
+                <table>
+                  <tbody>
+                    <tr>
+                      <td class="table--name">Home Page</td>
+                      <td class="table--link"><a href="#">http://www.homepage.com</a></td>
+                      <td><i class="icon fas fa-link"></i><i class="icon fas fa-trash-alt"></i></td>
+                    </tr>
+                    <tr>
+                      <td class="table--name">Currently offer</td>
+                      <td class="table--link"><a href="#">http://www.currently.com</a></td>
+                      <td><i class="icon fas fa-link"></i><i class="icon fas fa-trash-alt"></i></td>
+                    </tr>
+                    <tr>
+                      <td class="table--name">Blurpix</td>
+                      <td class="table--link"><a href="#">http://www.blurpix.com</a></td>
+                      <td><i class="icon fas fa-link"></i><i class="icon fas fa-trash-alt"></i></td>
+                    </tr>
+                    <tr>
+                      <td class="table--name">Your site</td>
+                      <td class="table--link"><a href="#">http://www.yoursite.com</a></td>
+                      <td><i class="icon fas fa-link"></i><i class="icon fas fa-trash-alt"></i></td>
+                    </tr>
+                    <tr>
+                      <td class="table--name">Google</td>
+                      <td class="table--link"><a href="#">http://www.google.com</a></td>
+                      <td><i class="icon fas fa-link"></i><i class="icon fas fa-trash-alt"></i></td>
+                    </tr>
+                    <tr>
+                      <td class="table--name">Facebook</td>
+                      <td class="table--link"><a href="#">http://www.facebook.com</a></td>
+                      <td><i class="icon fas fa-link"></i><i class="icon fas fa-trash-alt"></i></td>
+                    </tr>
+                    <tr>
+                      <td class="table--name">Dashboard</td>
+                      <td class="table--link"><a href="#">http://www.dashboard.com</a></td>
+                      <td><i class="icon fas fa-link"></i><i class="icon fas fa-trash-alt"></i></td>
+                    </tr>
+                    <tr>
+                      <td class="table--name">Blurax</td>
+                      <td class="table--link"><a href="#">http://www.blurax.com</a></td>
+                      <td><i class="icon fas fa-link"></i><i class="icon fas fa-trash-alt"></i></td>
+                    </tr>
+                    <tr>
+                      <td class="table--name">Piece of wine</td>
+                      <td class="table--link"><a href="#">http://www.pieceofwine.com</a></td>
+                      <td><i class="icon fas fa-link"></i><i class="icon fas fa-trash-alt"></i></td>
+                    </tr>
+                    <tr>
+                      <td class="table--name">Twitter</td>
+                      <td class="table--link"><a href="#">http://www.twitter.com</a></td>
+                      <td><i class="icon fas fa-link"></i><i class="icon fas fa-trash-alt"></i></td>
+                    </tr>
+                  </tbody>
+                </table>
+                </div>
+              <button>+ add new</button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>

@@ -347,15 +347,22 @@ body {
   font-weight: 300;
 }
 
+.layout {
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  display: flex;
+}
+
 /* SIDEBAR */
 .sidebar {
   background-color: #191919;
   color: #9C9C9C;
   letter-spacing: 1px;
-  height: 100%;
   width: 20vw;
-  position: absolute;
-  top: 0;
+  z-index: 3;
 }
 
 .sidebar .logo {
@@ -404,7 +411,7 @@ body {
 
 /* HEADER */
 header {
-  position: sticky;
+  position: fixed;
   top: 0;
   width: 100%;
   background-color: #fff;
@@ -453,18 +460,12 @@ header ul li + li {
 
 /* MAIN */
 .mainContainer {
-  width: 100%;
-  height: 100%;
   background-color: #F3F3F1;
-  overflow: hidden;
+  margin-top: 20px;
 }
 
 .pagesContainer {
-  position: relative;
-  left: 20vw;
-  width: 80%;
-  margin-top: 20px;
-  overflow: hidden;
+  margin: 50px 0;
 }
 
 /* Components */
@@ -558,6 +559,49 @@ h3 {
 .scroll-wrapper table {
   width: 100%;
   max-width: 100%;
+}
+
+.links .table-wrapper {
+  text-align: center;
+  margin: 20px auto;
+}
+
+.links button {
+  display: inline-block;
+  background-color: #F58220;
+  color: #fff;
+  margin: 25px;
+  padding: 10px 35px;
+  border: 0;
+  border-radius: 5px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.links button:hover, .links button:focus {
+  transform: translateY(-0.25em);
+}
+
+.links table {
+  width: 80%;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+.links table tr {
+  border-top: 2px solid #9C9C9C;
+  border-bottom: 2px solid #9C9C9C;
+}
+
+.links table td {
+  padding: 20px 0;
+}
+
+.links table a {
+  color: #56819F;
 }
 
 /*# sourceMappingURL=style.css.map */
