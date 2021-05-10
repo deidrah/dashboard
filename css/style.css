@@ -480,10 +480,84 @@ header ul li + li {
   color: #fff;
 }
 
+h2 {
+  text-transform: uppercase;
+  font-size: 16px;
+  border-bottom: 1px solid #F3F3F1;
+  padding: 10px 15px;
+}
+
+h3 {
+  font-size: 14px;
+  color: #9C9C9C;
+  text-align: left !important;
+}
+
 /* Sections */
 /* Pages / Views */
-.generalStatistic {
+.page {
   background-color: #fff;
+  margin: 0 30px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.page + .page {
+  margin-top: 30px;
+}
+
+.generalStatistic .calendar {
+  border-bottom: 1px solid #F3F3F1;
+  padding: 20px 30px;
+  text-align: center;
+}
+
+.generalStatistic .button--reset {
+  background-color: #F58220;
+  border: 0;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.generalStatistic .button--reset i {
+  color: #fff;
+}
+
+.generalStatistic ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px auto;
+  width: 70%;
+}
+
+.generalStatistic ul li {
+  border-bottom: 1px solid #9C9C9C;
+  width: 250px;
+  font-size: 16px;
+  padding: 15px 10px;
+  color: #9C9C9C;
+  margin-right: 20px;
+}
+
+.generalStatistic ul li span {
+  float: right;
+  color: #000000;
+}
+
+.generalStatistic .earnings {
+  padding: 10px 50px;
+  text-align: center;
+}
+
+.scroll-wrapper {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+}
+
+.scroll-wrapper table {
+  width: 100%;
+  max-width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */

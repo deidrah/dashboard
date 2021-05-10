@@ -1,3 +1,40 @@
 .generalStatistic {
-  background-color: $white;
+  .calendar {
+    border-bottom: 1px solid $light-gray;
+    padding: 20px 30px;
+    text-align: center;
+  }
+  .button--reset {
+    background-color: $orange;
+    border: 0;
+    padding: 5px;
+    border-radius: 5px;
+    i {
+      color: $white;
+    }
+  }
+  ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px auto;
+    width: 70%;
+    li {
+      border-bottom: 1px solid $gray;
+      width: 250px;
+      font-size: 16px;
+      padding: 15px 10px;
+      color: $gray;
+      margin-right: 20px;
+      span {
+        float: right;
+        color: $black;
+      }
+    }
+  }
+  .earnings {
+    padding: 10px 50px;
+    text-align: center
+    
+  }
 }

@@ -7,10 +7,13 @@
 /* Components */
 @import "components/form_field";
 @import "components/icon";
+@import "components/headers";
 
 /* Sections */
 @import "sections/registration_form";
 //
 /* Pages / Views */
+@import "pages/index";
 @import "pages/registration";
 @import "pages/statistics";
+@import "pages/links";
