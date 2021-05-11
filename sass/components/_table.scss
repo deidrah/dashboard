@@ -1,0 +1,32 @@
+.table-wrapper {
+  text-align: center;
+  margin: 20px auto;
+}
+
+.scroll-wrapper {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+}
+
+.scroll-wrapper table {
+  width: 80%;
+  margin: 20px auto;
+  max-width: 100%;
+}
+
+table {
+  width: 80%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  tr {
+    border-top: 2px solid $gray;
+    border-bottom: 2px solid $gray;
+  }
+  td {
+    padding: 20px 0;
+  }
+  a {
+    color: $blue;
+  }
+}

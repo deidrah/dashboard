@@ -8,6 +8,7 @@ body {
 .layout {
   display: flex;
   flex-direction: column;
+  background-color: $light-gray;
 }
 
 .content {
@@ -110,6 +111,8 @@ header {
 .mainContainer {
   background-color: $light-gray;
   margin-top: 20px;
+  margin: 0 auto;
+  max-width: 1024px;
 }
 
 .pagesContainer {

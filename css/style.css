@@ -350,6 +350,7 @@ body {
 .layout {
   display: flex;
   flex-direction: column;
+  background-color: #F3F3F1;
 }
 
 .content {
@@ -462,6 +463,8 @@ header ul li + li {
 .mainContainer {
   background-color: #F3F3F1;
   margin-top: 20px;
+  margin: 0 auto;
+  max-width: 1024px;
 }
 
 .pagesContainer {
@@ -494,6 +497,78 @@ h3 {
   text-align: left !important;
 }
 
+.calendar {
+  border-bottom: 1px solid #F3F3F1;
+  padding: 20px 30px;
+  text-align: center;
+}
+
+.button--reset {
+  background-color: #F58220;
+  border: 0;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.button--reset i {
+  color: #fff;
+}
+
+.table-wrapper {
+  text-align: center;
+  margin: 20px auto;
+}
+
+.scroll-wrapper {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+}
+
+.scroll-wrapper table {
+  width: 80%;
+  margin: 20px auto;
+  max-width: 100%;
+}
+
+table {
+  width: 80%;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+table tr {
+  border-top: 2px solid #9C9C9C;
+  border-bottom: 2px solid #9C9C9C;
+}
+
+table td {
+  padding: 20px 0;
+}
+
+table a {
+  color: #56819F;
+}
+
+.pagination ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+}
+
+.pagination ul li {
+  font-size: 20px;
+}
+
+.pagination ul li a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.pagination ul li + li {
+  margin-left: 15px;
+}
+
 /* Sections */
 /* Pages / Views */
 .page {
@@ -504,23 +579,6 @@ h3 {
 
 .page + .page {
   margin-top: 30px;
-}
-
-.generalStatistic .calendar {
-  border-bottom: 1px solid #F3F3F1;
-  padding: 20px 30px;
-  text-align: center;
-}
-
-.generalStatistic .button--reset {
-  background-color: #F58220;
-  border: 0;
-  padding: 5px;
-  border-radius: 5px;
-}
-
-.generalStatistic .button--reset i {
-  color: #fff;
 }
 
 .generalStatistic ul {
@@ -550,22 +608,6 @@ h3 {
   text-align: center;
 }
 
-.scroll-wrapper {
-  display: block;
-  width: 100%;
-  overflow-x: auto;
-}
-
-.scroll-wrapper table {
-  width: 100%;
-  max-width: 100%;
-}
-
-.links .table-wrapper {
-  text-align: center;
-  margin: 20px auto;
-}
-
 .links button {
   display: inline-block;
   background-color: #F58220;
@@ -585,23 +627,35 @@ h3 {
   transform: translateY(-0.25em);
 }
 
-.links table {
-  width: 80%;
-  margin: 0 auto;
-  border-collapse: collapse;
+.details .details-Container {
+  padding-bottom: 20px;
 }
 
-.links table tr {
-  border-top: 2px solid #9C9C9C;
-  border-bottom: 2px solid #9C9C9C;
+.details table {
+  font-size: 14px;
 }
 
-.links table td {
-  padding: 20px 0;
+.details table td {
+  padding: 10px 5px;
 }
 
-.links table a {
-  color: #56819F;
+.banners button {
+  display: inline-block;
+  background-color: #F58220;
+  color: #fff;
+  margin: 25px;
+  padding: 10px 35px;
+  border: 0;
+  border-radius: 5px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.banners button:hover, .banners button:focus {
+  transform: translateY(-0.25em);
 }
 
 /*# sourceMappingURL=style.css.map */

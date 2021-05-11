@@ -8,6 +8,9 @@
 @import "components/form_field";
 @import "components/icon";
 @import "components/headers";
+@import "components/calendar";
+@import "components/table";
+@import "components/pagination";
 
 /* Sections */
 @import "sections/registration_form";
@@ -17,3 +20,5 @@
 @import "pages/registration";
 @import "pages/statistics";
 @import "pages/links";
+@import "pages/details";
+@import "pages/banners";

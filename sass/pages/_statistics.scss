@@ -1,18 +1,4 @@
 .generalStatistic {
-  .calendar {
-    border-bottom: 1px solid $light-gray;
-    padding: 20px 30px;
-    text-align: center;
-  }
-  .button--reset {
-    background-color: $orange;
-    border: 0;
-    padding: 5px;
-    border-radius: 5px;
-    i {
-      color: $white;
-    }
-  }
   ul {
     list-style: none;
     display: flex;
