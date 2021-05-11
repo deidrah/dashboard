@@ -478,6 +478,101 @@
               </div>
             </div>
           </div>
+          <div class="page postback">
+            <h2>New postback</h2>
+            <div class="postback-container">
+              <p>You can insert some parameters in this postback:</p>
+              <form>
+                <div class="field-group">
+                  <div class="field">
+                    <label>Signup</label>
+                    <textarea id="signup" name="signup" rows="8" cols="20">
+                    </textarea>
+                  </div>
+                  <div class="field">
+                    <label>Deposit</label>
+                    <textarea id="deposit" name="deposit" rows="8" cols="20">
+                    </textarea>
+                  </div>
+                </div>
+                <div class="field-group">
+                  <div class="field">
+                    <label>Postback type</label>
+                    <select>
+                      <optgroup>
+                        <option value="S2S">S2S(http://..)&#8195</option>
+                        <option value="Z2Z">Z2Z(http://..)&#8195</option>
+                        <option value="T2T">T2T(http://..)&#8195</option>
+                      </optgroup>
+                    </select>
+                  </div>
+                  <div class="field">
+                    <label>To countries</label>
+                    <select>
+                      <optgroup>
+                        <option value="Poland">Poland&#8195</option>
+                        <option value="Germany">Germany&#8195</option>
+                        <option value="Russia">Russia&#8195</option>
+                      </optgroup>
+                    </select>
+                  </div>
+                  <div class="field">
+                    <label>Sending options</label>
+                    <select>
+                      <optgroup>
+                        <option value="select">Select&#8195</option>
+                        <option value="selectTwo">Select Two&#8195</option>
+                        <option value="selectThree">Select Three&#8195</option>
+                      </optgroup>
+                    </select>
+                  </div>
+                </div>
+                <div>
+                  <div class="checkbox-statuses">
+                    <legend><span>NOT</span>send statuses</legend>
+                    <div>
+                      <input type="checkbox" id="checkOne" name="status" value="One">
+                      <label for="checkOne">One</label>
+                    </div>
+                    <div>
+                      <input type="checkbox" id="checkTwo" name="status" value="Two">
+                      <label for="checkTwo">Two</label>
+                    </div>
+                    <div>
+                      <input type="checkbox" id="checkThree" name="status" value="Three">
+                      <label for="checkThree">Three</label>
+                    </div>
+                    <div>
+                      <input type="checkbox" id="checkFour" name="status" value="Four">
+                      <label for="checkFour">Four</label>
+                    </div>
+                    <div>
+                      <input type="checkbox" id="checkFive" name="status" value="Five">
+                      <label for="checkFive">Five</label>
+                    </div>
+                    <div>
+                      <input type="checkbox" id="checkSix" name="status" value="Six">
+                      <label for="checkSix">Six</label>
+                    </div>
+                    <div>
+                      <input type="checkbox" id="checkSeven" name="status" value="Seven">
+                      <label for="checkSeven">Seven</label>
+                    </div>
+                    <div>
+                      <input type="checkbox" id="checkEight" name="status" value="Eight">
+                      <label for="checkEight">Eight</label>
+                    </div>
+                  </div>
+              </div>
+              <div>
+                <legend>Send after:</legend>
+                <input type="range" id="hours" name="hours"
+                       min="0" max="168">
+              </div>
+              <button type="submit">Save</button>
+            </form>
+            </div>
+          </div>
         </div>
       </div>
     </div>
