@@ -35,14 +35,14 @@
     <div class="content">
       <aside class="sidebar">
         <div class="logo">Just do it<i class="hamburger icon fas fa-bars"></i></div>
-        <ul>
-          <li><i class="icon fas fa-star"></i>General</li>
-          <li><i class="icon fas fa-sitemap"></i>Details</li>
-          <li><i class="icon fas fa-link"></i>Links</li>
-          <li><i class="icon fas fa-images"></i>Banners</li>
-          <li><i class="icon fas fa-user"></i>Personal data</li>
-          <li><i class="icon fas fa-money-bill-wave"></i>Payout</li>
-          <li><i class="icon fas fa-undo-alt"></i>Postback</li>
+        <ul class="menu-list">
+          <li><a href="#general" class="active"><i class="icon fas fa-star"></i>General</a></li>
+          <li><a href="#details" class="active"><i class="icon fas fa-sitemap"></i>Details</a></li>
+          <li><a href="#links" class="active"><i class="icon fas fa-link"></i>Links</a></li>
+          <li><a href="#banners" class="active"><i class="icon fas fa-images"></i>Banners</a></li>
+          <li><a href="#personalData" class="active"><i class="icon fas fa-user"></i>Personal data</a></li>
+          <li><a href="#Payout" class="active"><i class="icon fas fa-money-bill-wave"></i>Payout</a></li>
+          <li><a href="#Postback" class="active"><i class="icon fas fa-undo-alt"></i>Postback</a></li>
         </ul>
         <div class="contact">
           <p>Your manager</p>
@@ -54,7 +54,7 @@
       </aside>
       <div class="mainContainer">
         <div class="pagesContainer">
-          <div class="page generalStatistic">
+          <div id="general" class="page generalStatistic active-page">
             <h2>General Statistic</h2>
             <div class="calendar">
               <input type="text" id="datepicker-one">
@@ -74,7 +74,7 @@
               <canvas id="myChart"></canvas>
             </div>
           </div>
-          <div class="page links">
+          <div id="links" class="page links active-page">
             <h2>Links</h2>
             <div class="table-wrapper">
               <button>+ add new</button>
@@ -137,7 +137,7 @@
               <button>+ add new</button>
             </div>
           </div>
-          <div class="page details">
+          <div id="details" class="page details">
             <h2>Detail statistic</h2>
             <div class="calendar">
               <input type="text" id="datepickerOne">
@@ -287,7 +287,7 @@
               </div>
             </div>
           </div>
-          <div class="page banners">
+          <div id="banners" class="page banners">
             <h2>Banners</h2>
             <div class="table-wrapper">
               <button>+ add new</button>
@@ -330,7 +330,7 @@
               <button>+ add new</button>
             </div>
           </div>
-          <div class="page personalData">
+          <div id="personalData" class="page personalData">
             <h2>Personal data</h2>
             <div class="form-container">
               <form action="" method="POST">
@@ -386,7 +386,7 @@
               </form>
             </div>
           </div>
-          <div class="page payout">
+          <div id="payout" class="page payout">
             <h2>Payout</h2>
             <div class="calendar">
               <input type="text" id="datepickerOne">
@@ -473,7 +473,7 @@
               </div>
             </div>
           </div>
-          <div class="page postback">
+          <div id="postback" class="page postback">
             <h2>New postback</h2>
             <div class="postback-container">
               <p>page in progress...</p>

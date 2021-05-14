@@ -342,19 +342,26 @@ template {
 }
 
 /* GENERAL */
+html {
+  height: 100%;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
+  height: 100%;
 }
 
 .layout {
   display: flex;
   flex-direction: column;
   background-color: #E3E3E3;
+  height: 100%;
 }
 
 .content {
   display: flex;
+  height: 100%;
 }
 
 /* SIDEBAR */
@@ -393,6 +400,14 @@ body {
   padding: 10px 20px;
   cursor: pointer;
   transition: 0.3s ease-in-out;
+  display: flex;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: #9C9C9C;
+  display: flex;
+  width: 100%;
 }
 
 .sidebar ul li:hover {
@@ -509,6 +524,7 @@ header ul i {
   background-color: #E3E3E3;
   margin-top: 20px;
   margin: 0 auto;
+  min-width: 80%;
   max-width: 1024px;
 }
 
@@ -683,12 +699,17 @@ button:hover, button:focus {
 /* Pages / Views */
 .page {
   background-color: #fff;
+  display: none;
   margin: 0 30px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .page + .page {
   margin-top: 30px;
+}
+
+.active-page {
+  display: block;
 }
 
 .form-container {

@@ -1,18 +1,25 @@
 /* GENERAL */
 
+html {
+  height: 100%;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
+  height: 100%;
 }
 
 .layout {
   display: flex;
   flex-direction: column;
   background-color: $light-gray;
+  height: 100%;
 }
 
 .content {
   display: flex;
+  height: 100%;
 }
 
 /* SIDEBAR */
@@ -45,6 +52,13 @@ body {
       padding: 10px 20px;
       cursor: pointer;
       transition: 0.3s ease-in-out;
+      display: flex;
+      a {
+        text-decoration: none;
+        color: $gray;
+        display: flex;
+        width: 100%;
+      }
       &:hover {
         color: $white;
         border-left: 3px solid $orange;
@@ -152,6 +166,7 @@ header {
   background-color: $light-gray;
   margin-top: 20px;
   margin: 0 auto;
+  min-width: 80%;
   max-width: 1024px;
 }
 

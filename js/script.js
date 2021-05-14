@@ -1,4 +1,4 @@
-/*
+/* HAMBURGER
 
 function toggleMenu(visible) {
   document.querySelector('.menu').classList.toggle('show', visible)
@@ -12,6 +12,7 @@ document.querySelector('.hamburger').addEventListener('click', function(e) {
 */
 
 /* CHART */
+
 var ctx = document.getElementById('myChart').getContext('2d');
 var chart = new Chart(ctx, {
   // 1
@@ -45,3 +46,32 @@ var chart = new Chart(ctx, {
       }]
   },
 });
+
+/* NAVIGATION */
+
+const pageClickHandler = function(event){
+  event.preventDefault();
+  
+  const activeLinks = document.querySelectorAll('.menu-list a.active');
+
+  for(let activeLink of activeLinks){
+    activeLink.classList.remove('active');
+  }
+
+  this.classList.add('active');
+  const activePages = document.querySelectorAll('.pagesContainer div.active-page');
+
+  for(let activePage of activePages){
+    activePage.classList.remove('active-page');
+  }
+
+  const pageSelector = this.getAttribute("href");
+  const targetPage = document.querySelector(pageSelector);
+  targetPage.classList.add('active-page');
+}
+
+  const links = document.querySelectorAll('.menu-list a');
+
+  for(let link of links){
+    link.addEventListener('click', pageClickHandler);
+  }
