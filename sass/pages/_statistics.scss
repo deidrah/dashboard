@@ -1,12 +1,14 @@
 .generalStatistic {
-  ul {
+  .statistics ul {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
     margin: 20px auto;
     width: 70%;
+    padding: 0;
+    justify-content: center;
     li {
-      border-bottom: 1px solid $gray;
+      border-bottom: 1px solid $light-gray;
       width: 250px;
       font-size: 16px;
       padding: 15px 10px;
@@ -20,7 +22,8 @@
   }
   .earnings {
     padding: 10px 50px;
-    text-align: center
-    
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
   }
 }

@@ -5,10 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet"> 
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">  
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css">
-  <link rel="stylesheet" href="vendor/bootstrap-grid.min.css">
   <link rel="stylesheet" href="css/style.css">
   <title>Dashboard</title>
 </head>
@@ -34,7 +34,7 @@
     </header>
     <div class="content">
       <aside class="sidebar">
-        <div class="logo">Just do it<i class="icon fas fa-bars"></i></div>
+        <div class="logo">Just do it<i class="hamburger icon fas fa-bars"></i></div>
         <ul>
           <li><i class="icon fas fa-star"></i>General</li>
           <li><i class="icon fas fa-sitemap"></i>Details</li>
@@ -48,7 +48,7 @@
           <p>Your manager</p>
           <div class="manager">
             <img src="images/manager.png" />
-            <p>Mikhael E.</p>
+            <p><a href="#">Mikhael E.</a></p>
           </div>
         </div>
       </aside>
@@ -57,8 +57,8 @@
           <div class="page generalStatistic">
             <h2>General Statistic</h2>
             <div class="calendar">
-              <input type="text" id="datepickerOne">
-              <input type="text" id="datepickerTwo">
+              <input type="text" id="datepicker-one">
+              <input type="text" id="datepicker-two">
               <button class="button--reset"><i class="icon fas fa-redo-alt"></i></button>
             </div>
             <div class="statistics">
@@ -71,12 +71,7 @@
             </div>
             <div class="earnings">
               <h3>Earnings chart</h3>
-              <button>Signups</button>
-              <button>FTD</button>
-              <button>Earned</button>
-              <div class="chart">
-                <img src="images/graph.png" />
-              </div>
+              <canvas id="myChart"></canvas>
             </div>
           </div>
           <div class="page links">
@@ -481,6 +476,8 @@
           <div class="page postback">
             <h2>New postback</h2>
             <div class="postback-container">
+              <p>page in progress...</p>
+              <!--
               <p>You can insert some parameters in this postback:</p>
               <form>
                 <div class="field-group">
@@ -571,6 +568,7 @@
               </div>
               <button type="submit">Save</button>
             </form>
+            -->
             </div>
           </div>
         </div>
@@ -578,10 +576,12 @@
     </div>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
   <script src="pikaday.js"></script>
   <script>
-    const pickerOne = new Pikaday({ field: document.getElementById('datepickerOne') });
-    const pickerTwo = new Pikaday({ field: document.getElementById('datepickerTwo') });
+    const pickerOne = new Pikaday({ field: document.getElementById('datepicker-one') });
+    const pickerTwo = new Pikaday({ field: document.getElementById('datepicker-two') });
   </script>
+  <script src="js/script.js"></script>
 </body>
 </html>

@@ -10,23 +10,43 @@
 }
 
 .scroll-wrapper table {
-  width: 80%;
+  width: 70%;
   margin: 20px auto;
   max-width: 100%;
 }
 
 table {
-  width: 80%;
+  width: 70%;
   margin: 0 auto;
   border-collapse: collapse;
   tr {
-    border-top: 2px solid $gray;
-    border-bottom: 2px solid $gray;
+    border-top: 1px solid $light-gray;
+    border-bottom: 1px solid $light-gray;
+    color: $gray;
+    font-weight: 300;
+    transition: 0.3s ease-in-out;
+    &:hover {
+      background-color: $light-gray;
+    }
   }
   td {
-    padding: 20px 0;
+    padding: 15px 5px;
+    i + i {
+      margin-left: 20px;
+    }
   }
   a {
     color: $blue;
+    text-decoration: none;
+    &:hover {
+      color: darken($blue, 10%);
+    }
+  }
+  i {
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    &:hover {
+      color: $orange;
+    }
   }
 }
