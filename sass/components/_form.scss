@@ -1,0 +1,29 @@
+form {
+  width: 100%;
+  text-align: center;
+}
+.field-group {
+  border-top: 1px solid $light-gray;
+  margin: 30px auto;
+}
+.field {
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 40%;
+  label {
+    margin-right: 30px;
+    color: $gray;
+    font-weight: 500;
+  }
+  input {
+    padding: 10px 5px;
+    border-radius: 5px;
+    width: 70%;
+    border: 1px solid $light-gray;
+    &::placeholder {
+      color: $black;
+    }
+  }
+}

@@ -16,13 +16,11 @@
 }
 
 table {
-  width: 70%;
   margin: 0 auto;
   border-collapse: collapse;
   tr {
     border-top: 1px solid $light-gray;
     border-bottom: 1px solid $light-gray;
-    color: $gray;
     font-weight: 300;
     transition: 0.3s ease-in-out;
     &:hover {
@@ -31,6 +29,15 @@ table {
   }
   td {
     padding: 15px 5px;
+  }
+}
+
+.table-fair {
+  width: 70%;
+  tr {
+    color: $gray;
+  }
+  td {
     i + i {
       margin-left: 20px;
     }
@@ -47,6 +54,25 @@ table {
     cursor: pointer;
     &:hover {
       color: $orange;
+    }
+  }
+}
+
+.table-dark {
+  width: 95%;
+  td {
+    padding: 15px !important;
+    color: $black;
+    font-weight: 300;
+  }
+  th {
+    color: $gray !important;
+    font-weight: 500;
+    padding: 10px 15px;
+    text-align: left;
+    &:hover {
+      background: darken($light-gray, 3%);
+      color: $black !important;
     }
   }
 }

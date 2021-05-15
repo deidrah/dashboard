@@ -1,15 +1,4 @@
-/* HAMBURGER
-
-function toggleMenu(visible) {
-  document.querySelector('.menu').classList.toggle('show', visible)
-}
-
-document.querySelector('.hamburger').addEventListener('click', function(e) {
-  e.preventDefault();
-  toggleMenu()
-});
-
-*/
+'use strict';
 
 /* CHART */
 
@@ -70,8 +59,31 @@ const pageClickHandler = function(event){
   targetPage.classList.add('active-page');
 }
 
-  const links = document.querySelectorAll('.menu-list a');
+const links = document.querySelectorAll('.menu-list a');
 
-  for(let link of links){
-    link.addEventListener('click', pageClickHandler);
-  }
+for(let link of links){
+  link.addEventListener('click', pageClickHandler);
+  link.addEventListener('click', function(e) {
+    e.preventDefault();
+    toggleMenu()
+  });
+}
+
+/* HAMBURGER */
+
+const quit = document.querySelector('.quit');
+const hamburger = document.querySelector('.hamburger-under');
+
+function toggleMenu(visible) {
+  document.querySelector('.sidebar').classList.toggle('active-menu', visible)
+}
+
+quit.addEventListener('click', function(e) {
+  e.preventDefault();
+  toggleMenu()
+});
+
+hamburger.addEventListener('click', function(e) {
+  e.preventDefault();
+  toggleMenu()
+});

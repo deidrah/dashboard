@@ -16,6 +16,7 @@
   <div class="layout">
     <header>
       <div class="info">
+        <i class="hamburger-under hamburger icon fas fa-bars"></i>
         <ul>
           <li><i class="icon fas fa-wallet"></i>
             <select>
@@ -34,7 +35,7 @@
     </header>
     <div class="content">
       <aside class="sidebar">
-        <div class="logo">Just do it<i class="hamburger icon fas fa-bars"></i></div>
+        <div class="logo">Just do it<i class="quit fas fa-times"></i></div>
         <ul class="menu-list">
           <li><a href="#general" class="active"><i class="icon fas fa-star"></i>General</a></li>
           <li><a href="#details" class="active"><i class="icon fas fa-sitemap"></i>Details</a></li>
@@ -79,7 +80,7 @@
             <div class="table-wrapper">
               <button>+ add new</button>
               <div class="scroll-wrapper">
-                <table>
+                <table class="table-fair">
                   <tbody>
                     <tr>
                       <td class="table--name">Home Page</td>
@@ -146,134 +147,136 @@
             </div>
             <div class="details-container">
               <div class="table-wrapper">
-                <table>
-                  <thead>
-                    <tr>
-                      <th>Tracker name</th>
-                      <th>Initiated date</th>
-                      <th>Visits</th>
-                      <th>Unique</th>
-                      <th>Signups</th>
-                      <th>FTD</th>
-                      <th>Depositors</th>
-                      <th>Deposits ($)</th>
-                      <th>Payout ($)</th>
-                      <th>Turnover</th>
-                      <th>Deal</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>aff/sam_test</td>
-                      <td>17/08/02 (12:58)</td>
-                      <td>232</td>
-                      <td>114</td>
-                      <td>12</td>
-                      <td>6</td>
-                      <td>3</td>
-                      <td>34,425.00</td>
-                      <td>234.00</td>
-                      <td>421,342.00</td>
-                      <td>cpl(200)</td>
-                    </tr>
-                    <tr>
-                      <td>aff/sam_test</td>
-                      <td>17/08/02 (12:58)</td>
-                      <td>232</td>
-                      <td>114</td>
-                      <td>12</td>
-                      <td>6</td>
-                      <td>3</td>
-                      <td>34,425.00</td>
-                      <td>234.00</td>
-                      <td>421,342.00</td>
-                      <td>cpl(200)</td>
-                    </tr>
-                    <tr>
-                      <td>aff/sam_test</td>
-                      <td>17/08/02 (12:58)</td>
-                      <td>232</td>
-                      <td>114</td>
-                      <td>12</td>
-                      <td>6</td>
-                      <td>3</td>
-                      <td>34,425.00</td>
-                      <td>234.00</td>
-                      <td>421,342.00</td>
-                      <td>cpl(200)</td>
-                    </tr>
-                    <tr>
-                      <td>aff/sam_test</td>
-                      <td>17/08/02 (12:58)</td>
-                      <td>232</td>
-                      <td>114</td>
-                      <td>12</td>
-                      <td>6</td>
-                      <td>3</td>
-                      <td>34,425.00</td>
-                      <td>234.00</td>
-                      <td>421,342.00</td>
-                      <td>cpl(200)</td>
-                    </tr>
-                    <tr>
-                      <td>aff/sam_test</td>
-                      <td>17/08/02 (12:58)</td>
-                      <td>232</td>
-                      <td>114</td>
-                      <td>12</td>
-                      <td>6</td>
-                      <td>3</td>
-                      <td>34,425.00</td>
-                      <td>234.00</td>
-                      <td>421,342.00</td>
-                      <td>cpl(200)</td>
-                    </tr>
-                    <tr>
-                      <td>aff/sam_test</td>
-                      <td>17/08/02 (12:58)</td>
-                      <td>232</td>
-                      <td>114</td>
-                      <td>12</td>
-                      <td>6</td>
-                      <td>3</td>
-                      <td>34,425.00</td>
-                      <td>234.00</td>
-                      <td>421,342.00</td>
-                      <td>cpl(200)</td>
-                    </tr>
-                    <tr>
-                      <td>aff/sam_test</td>
-                      <td>17/08/02 (12:58)</td>
-                      <td>232</td>
-                      <td>114</td>
-                      <td>12</td>
-                      <td>6</td>
-                      <td>3</td>
-                      <td>34,425.00</td>
-                      <td>234.00</td>
-                      <td>421,342.00</td>
-                      <td>cpl(200)</td>
-                    </tr>
-                    <tr>
-                      <td>aff/sam_test</td>
-                      <td>17/08/02 (12:58)</td>
-                      <td>232</td>
-                      <td>114</td>
-                      <td>12</td>
-                      <td>6</td>
-                      <td>3</td>
-                      <td>34,425.00</td>
-                      <td>234.00</td>
-                      <td>421,342.00</td>
-                      <td>cpl(200)</td>
-                    </tr>
-                  </tbody>
-                </table>
+                <div class="scroll-wrapper">
+                  <table class="table-dark">
+                    <thead>
+                      <tr>
+                        <th>Tracker name</th>
+                        <th>Initiated date</th>
+                        <th>Visits</th>
+                        <th>Unique</th>
+                        <th>Signups</th>
+                        <th>FTD</th>
+                        <th>Depositors</th>
+                        <th>Deposits ($)</th>
+                        <th>Payout ($)</th>
+                        <th>Turnover</th>
+                        <th>Deal</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>aff/sam_test</td>
+                        <td>17/08/02 (12:58)</td>
+                        <td>232</td>
+                        <td>114</td>
+                        <td>12</td>
+                        <td>6</td>
+                        <td>3</td>
+                        <td>34,425.00</td>
+                        <td>234.00</td>
+                        <td>421,342.00</td>
+                        <td>cpl(200)</td>
+                      </tr>
+                      <tr>
+                        <td>aff/sam_test</td>
+                        <td>17/08/02 (12:58)</td>
+                        <td>232</td>
+                        <td>114</td>
+                        <td>12</td>
+                        <td>6</td>
+                        <td>3</td>
+                        <td>34,425.00</td>
+                        <td>234.00</td>
+                        <td>421,342.00</td>
+                        <td>cpl(200)</td>
+                      </tr>
+                      <tr>
+                        <td>aff/sam_test</td>
+                        <td>17/08/02 (12:58)</td>
+                        <td>232</td>
+                        <td>114</td>
+                        <td>12</td>
+                        <td>6</td>
+                        <td>3</td>
+                        <td>34,425.00</td>
+                        <td>234.00</td>
+                        <td>421,342.00</td>
+                        <td>cpl(200)</td>
+                      </tr>
+                      <tr>
+                        <td>aff/sam_test</td>
+                        <td>17/08/02 (12:58)</td>
+                        <td>232</td>
+                        <td>114</td>
+                        <td>12</td>
+                        <td>6</td>
+                        <td>3</td>
+                        <td>34,425.00</td>
+                        <td>234.00</td>
+                        <td>421,342.00</td>
+                        <td>cpl(200)</td>
+                      </tr>
+                      <tr>
+                        <td>aff/sam_test</td>
+                        <td>17/08/02 (12:58)</td>
+                        <td>232</td>
+                        <td>114</td>
+                        <td>12</td>
+                        <td>6</td>
+                        <td>3</td>
+                        <td>34,425.00</td>
+                        <td>234.00</td>
+                        <td>421,342.00</td>
+                        <td>cpl(200)</td>
+                      </tr>
+                      <tr>
+                        <td>aff/sam_test</td>
+                        <td>17/08/02 (12:58)</td>
+                        <td>232</td>
+                        <td>114</td>
+                        <td>12</td>
+                        <td>6</td>
+                        <td>3</td>
+                        <td>34,425.00</td>
+                        <td>234.00</td>
+                        <td>421,342.00</td>
+                        <td>cpl(200)</td>
+                      </tr>
+                      <tr>
+                        <td>aff/sam_test</td>
+                        <td>17/08/02 (12:58)</td>
+                        <td>232</td>
+                        <td>114</td>
+                        <td>12</td>
+                        <td>6</td>
+                        <td>3</td>
+                        <td>34,425.00</td>
+                        <td>234.00</td>
+                        <td>421,342.00</td>
+                        <td>cpl(200)</td>
+                      </tr>
+                      <tr>
+                        <td>aff/sam_test</td>
+                        <td>17/08/02 (12:58)</td>
+                        <td>232</td>
+                        <td>114</td>
+                        <td>12</td>
+                        <td>6</td>
+                        <td>3</td>
+                        <td>34,425.00</td>
+                        <td>234.00</td>
+                        <td>421,342.00</td>
+                        <td>cpl(200)</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
               </div>
               <div class="pagination">
                 <ul>
                   <li><a href="#"><i class="fas fa-chevron-left"></i></a></li>
-                  <li><a href="#">1</a></li>
+                  <li><a class="active" href="#">1</a></li>
                   <li><a href="#">2</a></li>
                   <li><a href="#">3</a></li>
                   <li><a href="#">4</a></li>
@@ -292,7 +295,7 @@
             <div class="table-wrapper">
               <button>+ add new</button>
               <div class="scroll-wrapper">
-                <table>
+                <table class="table-fair">
                   <tbody>
                     <tr>
                       <td class="table--name">Banner main</td>
@@ -337,25 +340,25 @@
                 <div class="field-group">
                   <div class="field">
                     <label>Name</label>
-                    <input type="text" name="user-name">
+                    <input type="text" name="user-name" placeholder="Leonardo">
                   </div>
                   <div class="field">
                     <label>Surname</label>
-                    <input type="text" name="user-surname">
+                    <input type="text" name="user-surname" placeholder="Dicaprio">
                   </div>
                   <div class="field">
                     <label>Email</label>
-                    <input type="email" name="user-email">
+                    <input type="email" name="user-email" placeholder="leo@gmail.com">
                   </div>
                   <div class="field">
                     <label>Phone</label>
-                    <input type="phone" name="user-phone">
+                    <input type="phone" name="user-phone" placeholder="+1 432 555 00 44">
                   </div>
                 </div>
                 <div class="field-group">
                   <div class="field">
                     <label>Skype</label>
-                    <input type="text" name="user-skype">
+                    <input type="text" name="user-skype" placeholder="Leonardo.D">
                   </div>
                   <div class="field">
                     <label>ICQ</label>
@@ -389,77 +392,79 @@
           <div id="payout" class="page payout">
             <h2>Payout</h2>
             <div class="calendar">
-              <input type="text" id="datepickerOne">
-              <input type="text" id="datepickerTwo">
+              <input type="text" id="datepicker-three">
+              <input type="text" id="datepicker-four">
               <button class="button--reset"><i class="icon fas fa-redo-alt"></i></button>
             </div>
             <div class="payout-container">
               <div class="table-wrapper">
-                <table>
-                  <thead>
-                    <tr>
-                      <th>Date</th>
-                      <th>Amount ($)</th>
-                      <th>Deal</th>
-                      <th>Account</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>17/08/02(12:58)</td>
-                      <td>34,425.00</td>
-                      <td>cpl(200)</td>
-                      <td>bank</td>
-                    </tr>
-                    <tr>
-                      <td>17/08/02(12:58)</td>
-                      <td>34,425.00</td>
-                      <td>cpl(200)</td>
-                      <td>bank</td>
-                    </tr>
-                    <tr>
-                      <td>17/08/02(12:58)</td>
-                      <td>34,425.00</td>
-                      <td>cpl(200)</td>
-                      <td>bank</td>
-                    </tr>
-                    <tr>
-                      <td>17/08/02(12:58)</td>
-                      <td>34,425.00</td>
-                      <td>cpl(200)</td>
-                      <td>bank</td>
-                    </tr>
-                    <tr>
-                      <td>17/08/02(12:58)</td>
-                      <td>34,425.00</td>
-                      <td>cpl(200)</td>
-                      <td>bank</td>
-                    </tr>
-                    <tr>
-                      <td>17/08/02(12:58)</td>
-                      <td>34,425.00</td>
-                      <td>cpl(200)</td>
-                      <td>bank</td>
-                    </tr>
-                    <tr>
-                      <td>17/08/02(12:58)</td>
-                      <td>34,425.00</td>
-                      <td>cpl(200)</td>
-                      <td>bank</td>
-                    </tr>
-                    <tr>
-                      <td>17/08/02(12:58)</td>
-                      <td>34,425.00</td>
-                      <td>cpl(200)</td>
-                      <td>bank</td>
-                    </tr>
-                  </tbody>
-                </table>
+                <div class="scroll-wrapper">
+                  <table class="table-dark">
+                    <thead>
+                      <tr>
+                        <th>Date</th>
+                        <th>Amount ($)</th>
+                        <th>Deal</th>
+                        <th>Account</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>17/08/02(12:58)</td>
+                        <td>34,425.00</td>
+                        <td>cpl(200)</td>
+                        <td>bank</td>
+                      </tr>
+                      <tr>
+                        <td>17/08/02(12:58)</td>
+                        <td>34,425.00</td>
+                        <td>cpl(200)</td>
+                        <td>bank</td>
+                      </tr>
+                      <tr>
+                        <td>17/08/02(12:58)</td>
+                        <td>34,425.00</td>
+                        <td>cpl(200)</td>
+                        <td>bank</td>
+                      </tr>
+                      <tr>
+                        <td>17/08/02(12:58)</td>
+                        <td>34,425.00</td>
+                        <td>cpl(200)</td>
+                        <td>bank</td>
+                      </tr>
+                      <tr>
+                        <td>17/08/02(12:58)</td>
+                        <td>34,425.00</td>
+                        <td>cpl(200)</td>
+                        <td>bank</td>
+                      </tr>
+                      <tr>
+                        <td>17/08/02(12:58)</td>
+                        <td>34,425.00</td>
+                        <td>cpl(200)</td>
+                        <td>bank</td>
+                      </tr>
+                      <tr>
+                        <td>17/08/02(12:58)</td>
+                        <td>34,425.00</td>
+                        <td>cpl(200)</td>
+                        <td>bank</td>
+                      </tr>
+                      <tr>
+                        <td>17/08/02(12:58)</td>
+                        <td>34,425.00</td>
+                        <td>cpl(200)</td>
+                        <td>bank</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
               </div>
               <div class="pagination">
                 <ul>
                   <li><a href="#"><i class="fas fa-chevron-left"></i></a></li>
-                  <li><a href="#">1</a></li>
+                  <li><a class="active" href="#">1</a></li>
                   <li><a href="#">2</a></li>
                   <li><a href="#">3</a></li>
                   <li><a href="#">4</a></li>
@@ -581,6 +586,8 @@
   <script>
     const pickerOne = new Pikaday({ field: document.getElementById('datepicker-one') });
     const pickerTwo = new Pikaday({ field: document.getElementById('datepicker-two') });
+    const pickerThree = new Pikaday({ field: document.getElementById('datepicker-three') });
+    const pickerFour = new Pikaday({ field: document.getElementById('datepicker-four') });
   </script>
   <script src="js/script.js"></script>
 </body>

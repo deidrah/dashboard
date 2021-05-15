@@ -3,40 +3,124 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">  
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css">
   <link rel="stylesheet" href="css/style.css">
   <title>Styleguide</title>
 </head>
 <body>
-  <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
   <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
   <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
-  <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
-  <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
-  <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h6>
-  <p>Lorem ipsum dolor sit amet, consectetur <strong>adipiscing elit</strong>. Maecenas blandit diam urna, eu <a href="#">dignissim</a> ex dignissim consequat. Duis porta lectus lorem, quis eleifend justo scelerisque eget. Duis ac sem et turpis tincidunt molestie in non ipsum. Maecenas ut augue erat. Phasellus eu est commodo est hendrerit tempor. Mauris dignissim ex vel magna aliquet, sit amet facilisis turpis tincidunt. Fusce quis blandit libero, sed dapibus nisl. Pellentesque vitae ligula sed tellus sagittis dapibus eu non metus. Mauris rutrum ligula ut sapien varius, pellentesque volutpat diam porta. Ut at nunc ac tortor dapibus sodales id at leo. Nunc posuere lorem non feugiat elementum. Nunc sagittis diam justo, nec malesuada sapien tristique id. Vivamus in consequat nibh. Etiam tempor id ligula a dapibus. Proin vitae arcu nulla.</p>
-  <a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
-  <ul>
-    <li>Lorem ipsum dolor, consectetur <a href="#">consectetur adipiscing elit.</a>.</li>
-    <li>Lorem ipsum dolor <strong>sit amet</strong></li>
-    <li>Lorem ipsum dolor <strong>sit amet</strong>, consectetur <a href="#">consectetur adipiscing elit.</a>.</li>
-  </ul>
-  <ol>
-    <li>Lorem ipsum dolor, consectetur <a href="#">consectetur adipiscing elit.</a>.</li>
-    <li>Lorem ipsum dolor <strong>sit amet</strong></li>
-    <li>Lorem ipsum dolor <strong>sit amet</strong>, consectetur <a href="#">consectetur adipiscing elit.</a>.</li>
-  </ol>  
-  <div class="container">
-    <div class="row">
-      <div class="col-md-4">
-        <div class="form-field">
-        …
-        </div>
+  <button>Button</button>
+  <div class="calendar">
+    <input type="text" id="datepicker-one">
+    <input type="text" id="datepicker-two">
+    <button class="button--reset"><i class="icon fas fa-redo-alt"></i></button>
+  </div>
+  <div class="pagination">
+    <ul>
+      <li><a href="#"><i class="fas fa-chevron-left"></i></a></li>
+      <li><a class="active" href="#">1</a></li>
+      <li><a href="#">2</a></li>
+      <li><a href="#">3</a></li>
+      <li><a href="#">4</a></li>
+      <li><a href="#">5</a></li>
+      <li><a href="#">6</a></li>
+      <li><a href="#">7</a></li>
+      <li><a href="#">8</a></li>
+      <li><a href="#">9</a></li>
+      <li><a href="#"><i class="fas fa-chevron-right"></i></a></li>
+    </ul>
+  </div>
+  <form action="" method="POST">
+    <div class="field-group">
+      <div class="field">
+        <label>Name</label>
+        <input type="text" name="user-name" placeholder="Leonardo">
+      </div>
+      <div class="field">
+        <label>Surname</label>
+        <input type="text" name="user-surname" placeholder="Dicaprio">
+      </div>
+      <div class="field">
+        <label>Email</label>
+        <input type="email" name="user-email" placeholder="leo@gmail.com">
+      </div>
+      <div class="field">
+        <label>Phone</label>
+        <input type="phone" name="user-phone" placeholder="+1 432 555 00 44">
       </div>
     </div>
-  </div>
-  <div class="btn btn-success">Normalny zielony przycisk</div>
-  <div class="btn btn-danger">Normalny czerwony przycisk</div>
-  <div class="btn btn-lg btn-success">Duży zielony przycisk</div>
-  <div class="btn btn-sm btn-danger">Mały czerwony przycisk</div>
+    <button type="submit">Save</button>
+  </form>
+  <div class="table-wrapper">
+    <div class="scroll-wrapper">
+      <table class="table-fair">
+        <tbody>
+          <tr>
+            <td class="table--name">Home Page</td>
+            <td class="table--link"><a href="#">http://www.homepage.com</a></td>
+            <td><i class="icon fas fa-link"></i><i class="icon fas fa-trash-alt"></i></td>
+          </tr>
+          <tr>
+            <td class="table--name">Currently offer</td>
+            <td class="table--link"><a href="#">http://www.currently.com</a></td>
+            <td><i class="icon fas fa-link"></i><i class="icon fas fa-trash-alt"></i></td>
+          </tr>
+          <tr>
+            <td class="table--name">Blurpix</td>
+            <td class="table--link"><a href="#">http://www.blurpix.com</a></td>
+            <td><i class="icon fas fa-link"></i><i class="icon fas fa-trash-alt"></i></td>
+          </tr>
+          <tr>
+            <td class="table--name">Your site</td>
+            <td class="table--link"><a href="#">http://www.yoursite.com</a></td>
+            <td><i class="icon fas fa-link"></i><i class="icon fas fa-trash-alt"></i></td>
+          </tr>
+          <tr>
+            <td class="table--name">Google</td>
+            <td class="table--link"><a href="#">http://www.google.com</a></td>
+            <td><i class="icon fas fa-link"></i><i class="icon fas fa-trash-alt"></i></td>
+          </tr>
+          <tr>
+            <td class="table--name">Facebook</td>
+            <td class="table--link"><a href="#">http://www.facebook.com</a></td>
+            <td><i class="icon fas fa-link"></i><i class="icon fas fa-trash-alt"></i></td>
+          </tr>
+          <tr>
+            <td class="table--name">Dashboard</td>
+            <td class="table--link"><a href="#">http://www.dashboard.com</a></td>
+            <td><i class="icon fas fa-link"></i><i class="icon fas fa-trash-alt"></i></td>
+          </tr>
+          <tr>
+            <td class="table--name">Blurax</td>
+            <td class="table--link"><a href="#">http://www.blurax.com</a></td>
+            <td><i class="icon fas fa-link"></i><i class="icon fas fa-trash-alt"></i></td>
+          </tr>
+          <tr>
+            <td class="table--name">Piece of wine</td>
+            <td class="table--link"><a href="#">http://www.pieceofwine.com</a></td>
+            <td><i class="icon fas fa-link"></i><i class="icon fas fa-trash-alt"></i></td>
+          </tr>
+          <tr>
+            <td class="table--name">Twitter</td>
+            <td class="table--link"><a href="#">http://www.twitter.com</a></td>
+            <td><i class="icon fas fa-link"></i><i class="icon fas fa-trash-alt"></i></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+  <script src="pikaday.js"></script>
+  <script>
+    const pickerOne = new Pikaday({ field: document.getElementById('datepicker-one') });
+    const pickerTwo = new Pikaday({ field: document.getElementById('datepicker-two') });
+  </script>
+  <script src="js/script.js"></script>
 </body>
 </html>
